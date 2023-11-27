@@ -1,0 +1,457 @@
+/* 
+Hex code: #408ec6,
+ #7a2048,
+  #1e2761
+*/
+
+*{
+    margin: 0;
+    padding: 0 ;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+}
+.auth_header {
+    text-align: center;
+}
+.auth_header h1{
+    text-align: center;
+}
+.nav-bar{
+    background-color:#1e2761 ;   
+    margin-top: 0px !important;
+    color: #fff !important;
+   
+}
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-bar li a {
+    color: #fff !important;
+}
+
+.hero-sec{
+    background-image: url(../assets/img/maksym-kaharlytskyi-kDVaFjoQf4M-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 92vh;
+   
+}
+.activities {
+    text-align: center;
+}
+.activities input {
+    padding: 15px;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+  }
+  
+  .star {
+    display: inline-block;
+    font-size: 24px;
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+  }
+  .mama_g {
+    color: #1e2761;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 6px;
+  }
+  @media (max-width: 540px) {
+    .mama_g {
+        /* margin-left: 43px; */
+        font-size: 17px;
+        margin-top: 15px;
+    }
+    .track_shipment_office_details p{
+        /* line-height: 1; */
+        font-size: 14px !important;
+    }
+    
+  }
+  .office_cardo {
+    background-color: #fff;
+    border: 1px solid #000;
+    
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  }
+.track_ship_details {
+    border: 1px solid #3c3939;
+    border-collapse: collapse;
+}
+.track_shipment_office {
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-around;
+}
+.track_shipment_office img {
+    width: 275px;
+    height: 222px;
+}
+.track_shipment_office_details p{
+    /* line-height: 1; */
+    font-size: 15px;
+}
+.beeero {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px;
+    color: #1e2761;
+}
+.track_ship_details th, table.track_ship_details td {
+    border: 1px solid #4b4747; 
+}
+.track_ship_details td {
+    padding: 6px !important;
+
+}
+  
+.exp_para{
+    font-size: 23px;
+    line-height: 33px;
+}
+.card img{
+    height: 250px !important;
+}
+@media screen and (max-width: 680px) {
+    .hero-sec {
+        height: 52vh;
+    }
+    .search_bar{  
+    
+        padding: 5px 10px !important;
+        
+    }
+    .rounded{
+        font-size: 14px !important;
+    }
+    .track_btn{
+        font-size: 13px !important;
+    }
+    .exp_para{
+        padding: 23px !important;
+    }
+    .act_para{
+        padding: 23px !important;
+    }
+   .work_head{
+    font-size: 23px !important;
+   }
+   .exp_head{
+    font-size: 23px !important;
+   }
+   .rec_hed{
+    font-size: 23px !important; 
+   }
+   .card_head{
+    font-size: 23px !important;
+   }
+   .track_btn{
+    margin-top: 20px;
+    margin-left: 80px !important;
+   }
+   .rec_hed{
+    text-align: center;
+    
+   }
+   .faq_head{
+    font-size: 22px;
+    text-align: center;
+    
+   }
+   .accordians {
+    background-color: #1e2761;
+   }
+   .accordians b{
+    line-height: 27px;
+    padding: 5px;
+   }
+   .why_us{
+    margin-left: 30px !important;
+   }
+   
+  }
+.input-group{
+    outline: none;
+    
+}
+.search_bar{  
+    
+    /* padding: 15px 100px !important; */
+}
+.sea_rch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    outline: none;
+}
+.all_button{
+    color: #fff !important;
+    background-color: orangered  !important;
+    padding: 7px 40px !important;
+    height: 69px;
+}
+.all_button:hover {
+    background-color: rgb(238, 130, 91) !important;
+}
+.center{
+    text-align: center;
+}
+.center h1{
+    color: #1e2761 ;
+    font-weight: bold;
+}
+.center p{
+    color: #000;
+    font-size: 18px;
+}
+.no_office_found {
+    text-align: center;
+}
+.activities h1{
+    color: #1e2761 ;
+    font-weight: bold;
+}
+.activities h2{
+    color: #000;
+    font-size: 18px;
+}
+
+.all_working img{
+    height: 250px;
+}
+.office_sarch {
+    text-align: center;
+    padding: 0px 50px;
+}
+.muko_btn {
+    align-items: center;
+    justify-content: center;
+}
+.why_us img {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.offices_page_cards {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.view_office_img {
+    width: 53%;
+}
+.view_office_img img {
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tracking-detail {
+    padding: 3rem 0;
+  }
+  #tracking {
+    margin-bottom: 1rem;
+  }
+  [class*="tracking-status-"] p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  [class*="tracking-status-"] {
+    padding: 1.6rem 0;
+  }
+  .tracking-list {
+    border: 1px solid #e5e5e5;
+  }
+  .tracking-item {
+    border-left: 4px solid #00ba0d;
+    position: relative;
+    padding: 2rem 1.5rem 0.5rem 2.5rem;
+    font-size: 0.9rem;
+    margin-left: 3rem;
+    min-height: 5rem;
+  }
+  .tracking-item:last-child {
+    padding-bottom: 4rem;
+  }
+  .tracking-item .tracking-date {
+    margin-bottom: 0.5rem;
+  }
+  .svg-inline--fa {
+    height: 2em;
+  }
+  .svg-inline--far {
+    height: 1.1em;
+  }
+  .tracking-item .tracking-date span {
+    color: #888;
+    font-size: 85%;
+    padding-left: 0.4rem;
+  }
+  .tracking-item .tracking-content {
+    padding: 0.5rem 0.8rem;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+  }
+  .tracking-item .tracking-content span {
+    display: block;
+    color: #767676;
+    font-size: 13px;
+  }
+  .tracking-item .tracking-icon {
+    position: absolute;
+    left: -0.7rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #fff;
+  }
+  
+  .tracking-item-pending {
+    border-left: 4px solid #d6d6d6;
+    position: relative;
+    padding: 2rem 1.5rem 0.5rem 2.5rem;
+    font-size: 0.9rem;
+    margin-left: 3rem;
+    min-height: 5rem;
+  }
+  .tracking-item-pending:last-child {
+    padding-bottom: 4rem;
+  }
+  .tracking-item-pending .tracking-date {
+    margin-bottom: 0.5rem;
+  }
+  .tracking-item-pending .tracking-date span {
+    color: #888;
+    font-size: 85%;
+    padding-left: 0.4rem;
+  }
+  .tracking-item-pending .tracking-content {
+    padding: 0.5rem 0.8rem;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+  }
+  .tracking-item-pending .tracking-content span {
+    display: block;
+    color: #767676;
+    font-size: 13px;
+  }
+  .tracking-item-pending .tracking-icon {
+    line-height: 2.6rem;
+    position: absolute;
+    left: -0.7rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: #d6d6d6;
+  }
+  .tracking-item-pending .tracking-content {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .tracking-item .tracking-icon.status-current {
+    width: 1.9rem;
+    height: 1.9rem;
+    left: -1.1rem;
+  }
+  .tracking-item .tracking-icon.status-intransit {
+    color: #00ba0d;
+    font-size: 0.6rem;
+  }
+  .tracking-item .tracking-icon.status-current {
+    color: #00ba0d;
+    font-size: 0.6rem;
+  }
+  @media (min-width: 992px) {
+    .tracking-item {
+      margin-left: 10rem;
+    }
+    .tracking-item .tracking-date {
+      position: absolute;
+      left: -10rem;
+      width: 7.5rem;
+      text-align: right;
+    }
+    .tracking-item .tracking-date span {
+      display: block;
+    }
+    .tracking-item .tracking-content {
+      padding: 0;
+      background-color: transparent;
+    }
+  
+    .tracking-item-pending {
+      margin-left: 10rem;
+    }
+    .tracking-item-pending .tracking-date {
+      position: absolute;
+      left: -10rem;
+      width: 7.5rem;
+      text-align: right;
+    }
+    .tracking-item-pending .tracking-date span {
+      display: block;
+    }
+    .tracking-item-pending .tracking-content {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+  
+  .tracking-item .tracking-content {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .blinker {
+    border: 7px solid #e9f8ea;
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes blink { 50% { border-color:#fff ; }  }
+  
+  
+  
+ #tracking  *{
+    overflow: visible !important;
+  }
