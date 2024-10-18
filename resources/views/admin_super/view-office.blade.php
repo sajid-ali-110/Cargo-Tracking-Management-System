@@ -14,7 +14,12 @@
         <div class="offices_page_cards">
             {{-- @foreach ($all_offices as $office) --}}
                 <div class="view_office_img">
-                    <img src="https://img.freepik.com/premium-vector/post-office-cargo-truck-vehicle-loaded-parcel-boxes-illustration_101884-1028.jpg?w=2000" alt="Office 1" class="office-image">
+                    
+                    @if($all_offices->Profile_picture)
+                <img src="{{asset('/offices/'.$all_offices->Profile_picture)}}"  ><br>
+                @else
+                <img class="office-image" src="https://img.freepik.com/premium-vector/post-office-cargo-truck-vehicle-loaded-parcel-boxes-illustration_101884-1028.jpg?w=2000" alt="Office 1" class="office-image">
+                @endif
                 </div>
                 <div class="office-card">
                         <div class="office-details">

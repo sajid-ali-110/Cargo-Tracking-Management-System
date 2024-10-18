@@ -32,7 +32,7 @@ Route::get('/', [OfficeController::class,"homePage"])->name("cargoTS");
 
 
 Route::get("/home", function(){
-   return  redirect()->route("super-admin");
+   return  redirect()->route("  ");
 });
 
 
@@ -150,3 +150,6 @@ Route::middleware(AuthCheckAdmin::class)->group(function(){
 ///
 
 Route::get("/search/offices",[OfficeController::class,"search"])->name("search-offices");
+
+
+Route::get("/office/{id}",[OfficeController::class,"singleOffice"])->name("single-office");

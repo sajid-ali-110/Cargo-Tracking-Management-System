@@ -55,6 +55,9 @@
                 <label for="office-image" class="form-label">Image:</label>
                 <input type="file" name="office-image" accept="image/*" class="form-input" required>
 
+                @if($office->Profile_picture)
+                <img src="{{asset('/offices/'.$office->Profile_picture)}}" width="130px"><br>
+                @endif
 
                 <button type="submit" class="form-submit">Update Office</button>
             </form>

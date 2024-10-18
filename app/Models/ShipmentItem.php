@@ -39,11 +39,12 @@ class ShipmentItem extends Model
     }
 
     public function get_destination_office(){
-        return $this->belongsTo(Office::class,"destination_office_id","id");
+        return $this->belongsTo(Office::class,"destination_office_id","ID");
     }
 
     public function get_origin_office(){
-        return $this->belongsTo(Office::class,"origin_office_id","id");
+
+        return $this->belongsTo(Office::class,"origin_office_id","ID");
     }
 
     public function sender(){

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-    <title>Cargo</title>
+    <title>Cargo Ts</title>
 </head>
 
 <body>
@@ -190,7 +190,7 @@
                                                 </div>
                                                     <div class="tracking-content">
                                                         <span>Destination Office</span>
-                                                         {{$shipmnent->get_origin_office->office_name}} | ( <i>{{$shipmnent->get_origin_office->city}}</i> ) 
+                                                         {{$shipmnent->get_destination_office->office_name}} | ( <i>{{$shipmnent->get_destination_office->city}}</i> ) 
                                                      </div>
                                         </div>
 
@@ -302,11 +302,13 @@
                 Offices</h1>
             <div class="row">
                 @foreach ($all_offices as $office)
-                    <div class="col-md-3  why_us">
-                        <div class=" mt-5">
-                            <a href="{{ route('search-offices', ['id' => $office->id]) }}">
-                                <img src="{{ asset('/storage/public/uploads' . $office->Profile_picture) }}"
+                    <div class="col-md-3  why_us card">
+                        <div class=" my-2">
+                            <a href="{{ route('single-office', ['id' => $office->ID]) }}">
+                                <img style="object-fit: cover;" src="{{asset('/offices/'.$office->Profile_picture)}}"
                                     alt="{{ $office->name }}" class=" pb-2">
+
+                                <h4 class="text-dark font-weight-bold">{{ $office->office_name }}</h4>
                             </a>
                         </div>
                     </div>
@@ -320,7 +322,7 @@
                     <div class=" activities">
                         <form action="{{ route('search-offices') }}">
                             <div class="input-group rounded se_rch mt-3">
-                                <input type="search" class="form-control rounded " placeholder="Search Offices"
+                                <input name="search" type="search" class="form-control rounded " placeholder="Search Offices"
                                     aria-label="Search" aria-describedby="search-addon" />
                             </div>
                             <button type="submit" class="muko_btnbtn all_button mt-3">Search Here</button>

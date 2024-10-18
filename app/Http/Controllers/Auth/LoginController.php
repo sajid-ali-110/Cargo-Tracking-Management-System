@@ -73,7 +73,7 @@ class LoginController extends Controller
         }
 
         $office= Office::where("email",$request->email)->first();
-
+ 
         if( $office && Hash::check($request->password, $office->password) ){
 
             $request->session()->put('AuthUser', $office);

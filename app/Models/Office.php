@@ -19,8 +19,14 @@ class Office extends Model
         "province",
         "city",
         "email",
-        "password"
+        "password",
+        "Profile_picture"
     ];
 
     protected $table="office";
+
+
+    public function city(){
+        return $this->belongsTo(City::class,"city","ID");
+    }
 }

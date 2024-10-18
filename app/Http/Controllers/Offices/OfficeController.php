@@ -90,8 +90,11 @@ class OfficeController extends Controller
         $file = $req->file('office-image');
         $fileName = time() . '_' . $file->getClientOriginalName();
       
+        $filepath = $file->move( public_path("/offices"), $fileName);
 
         $post= $req->post();
+
+        $post['Profile_picture']= $fileName ;
 
         $post['office_code']= Str::random(10);
 
@@ -128,6 +131,9 @@ class OfficeController extends Controller
 
         // $post['password']= Hash::make($post['email']);
 
+
+
+
         $office= Office::find($id);
         $all_offices= Office::all();
 
@@ -145,6 +151,15 @@ class OfficeController extends Controller
             'email'=> request('email'),
             'zip_code'=> request('zip_code')
         ];
+
+           $file = $req->file('office-image');
+        $fileName = time() . '_' . $file->getClientOriginalName();
+      
+        $filepath = $file->move( public_path("/offices"), $fileName);
+
+        $post= $req->post();
+
+        $update_office_data['Profile_picture']= $fileName ; 
 
         $office= Office::where('ID',$id)->update($update_office_data);
 
@@ -177,8 +192,10 @@ public function search(Request $request)
 {
     $searchTerm = $request->input('search');
 
-    $offices = Office::where('city', 'like', '%' . $searchTerm . '%')->get();
+    $cities = City::where('name', 'like', '%' . $searchTerm . '%')->pluck("ID")->toArray();
 
+    $offices = Office::whereIn('city', $cities)->get();
+   
     return view('layouts.searchedOffice', ['offices' => $offices]);
 }
 
@@ -197,4 +214,14 @@ public function homePage(){
 
     return view("welcome",  ["all_offices"=>$all_offices,"shipmnent"=> $shipment]);
 }
+
+
+
+public function singleOffice(Request $req, $id){
+    $office= Office::findOrFail($id);
+
+    return view('frontend.single-office', compact('office'));
 }
+}
+
+
